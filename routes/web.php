@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/suratmasuk',[\App\Http\Controllers\SuratMasukController::class,'index']);
+Route::post('/suratmasuk',[\App\Http\Controllers\SuratMasukController::class,'store']);
+Route::get('/suratmasuk/create',[\App\Http\Controllers\SuratMasukController::class,'create']);

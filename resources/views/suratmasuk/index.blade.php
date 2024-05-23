@@ -1,25 +1,26 @@
 @extends('layout.master')
 
 @section('konten')
-
+<div class="row">
 <div class="col-12">
     <div class="card mb-4">
       <div class="card-header pb-0">
         <h6>Surat Masuk</h6>
+        <a href="/suratmasuk/create" class="btn btn-primary ">add</a>
       </div>
       <div class="card-body px-2 pt-0 pb-2">
         <div class="table-responsive p-2">
           <table class="table align-items-center mb-0">
             <thead>
               <tr>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">No Surat</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">Jenis Surat</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">Tanggal Surat</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">Tanggal Terima</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">Dari</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">Perihal</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">Keterangan</th>
-                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 p-2">File Surat</th>
+                <th class="text-secondary p-2">No Surat</th>
+                <th class="text-secondary p-2">Jenis Surat</th>
+                <th class=" text-secondary p-2">Tanggal Surat</th>
+                <th class="text-secondary p-2">Tanggal Terima</th>
+                <th class="text-secondary p-2">Dari</th>
+                <th class="text-secondary p-2">Perihal</th>
+                <th class="text-secondary p-2">Keterangan</th>
+                <th class="text-secondary p-2">File Surat</th>
                 <th class="text-secondary opacity-7">Action</th>
               </tr>
             </thead>
@@ -59,5 +60,5 @@
       </div>
     </div>
   </div>
-
+</div>
 @endsection
