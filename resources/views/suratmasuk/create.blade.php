@@ -9,6 +9,15 @@
             <h6>Tambah Surat Masuk</h6>
           </div>
           <div class="card-body px-4 pt-0 pb-2">
+            @if($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
             <form method="POST" action="/suratmasuk" enctype="multipart/form-data">
                 @csrf
                 <div class="row mb-3">
