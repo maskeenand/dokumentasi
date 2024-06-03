@@ -3,6 +3,7 @@
 @section('konten')
 
 
+
 <div class="row">
 <div class="col-12">
     <div class="card mb-4">
@@ -64,6 +65,9 @@
               @endforeach
             </tbody>
           </table>
+          <div>
+            {{ $suratmasuk-> links('pagination::bootstrap-5') }}
+          </div>
         </div>
       </div>
     </div>

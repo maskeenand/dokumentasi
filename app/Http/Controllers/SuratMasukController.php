@@ -9,7 +9,7 @@ class SuratMasukController extends Controller
 {
     public function index()
     {
-        $suratmasuk = SuratMasuk::all();
+        $suratmasuk = SuratMasuk::paginate(10);
 
                 return view ('suratmasuk.index',compact(['suratmasuk']));
     }
